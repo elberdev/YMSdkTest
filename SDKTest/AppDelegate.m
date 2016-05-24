@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Yieldmo/Yieldmo.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Initializing the SDK
+    [[YMSdk sharedYM] startWithAppID:@"com.yieldmo.SDKTest" features:YMSdkOptions_Default];
+    
     return YES;
 }
 

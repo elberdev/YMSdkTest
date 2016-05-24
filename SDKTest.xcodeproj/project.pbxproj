@@ -15,6 +15,7 @@
 		3B67E20E1CF373D900C02D30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B67E20C1CF373D900C02D30 /* LaunchScreen.storyboard */; };
 		3B67E2191CF373D900C02D30 /* SDKTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B67E2181CF373D900C02D30 /* SDKTestTests.m */; };
 		3B67E2241CF373D900C02D30 /* SDKTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B67E2231CF373D900C02D30 /* SDKTestUITests.m */; };
+		5B71BE36E28228C0324B959B /* libPods-SDKTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCFF24593AC05FAC4248BB7 /* libPods-SDKTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E351618527A0BBCA2300569 /* Pods-SDKTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDKTest/Pods-SDKTest.debug.xcconfig"; sourceTree = "<group>"; };
+		343FA597BB420F7BA555011E /* Pods-SDKTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDKTest/Pods-SDKTest.release.xcconfig"; sourceTree = "<group>"; };
 		3B67E1FB1CF373D900C02D30 /* SDKTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B67E1FF1CF373D900C02D30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3B67E2011CF373D900C02D30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		3B67E21F1CF373D900C02D30 /* SDKTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDKTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B67E2231CF373D900C02D30 /* SDKTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKTestUITests.m; sourceTree = "<group>"; };
 		3B67E2251CF373D900C02D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DCFF24593AC05FAC4248BB7 /* libPods-SDKTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDKTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B71BE36E28228C0324B959B /* libPods-SDKTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30BB2502B82C1BB555CE97A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DCFF24593AC05FAC4248BB7 /* libPods-SDKTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B67E1F21CF373D800C02D30 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				3B67E2171CF373D900C02D30 /* SDKTestTests */,
 				3B67E2221CF373D900C02D30 /* SDKTestUITests */,
 				3B67E1FC1CF373D900C02D30 /* Products */,
+				5459893234D155464FD11B38 /* Pods */,
+				30BB2502B82C1BB555CE97A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +155,15 @@
 			path = SDKTestUITests;
 			sourceTree = "<group>";
 		};
+		5459893234D155464FD11B38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E351618527A0BBCA2300569 /* Pods-SDKTest.debug.xcconfig */,
+				343FA597BB420F7BA555011E /* Pods-SDKTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B67E2281CF373D900C02D30 /* Build configuration list for PBXNativeTarget "SDKTest" */;
 			buildPhases = (
+				C56B07E292CB0AEDAFC40858 /* 📦 Check Pods Manifest.lock */,
 				3B67E1F71CF373D900C02D30 /* Sources */,
 				3B67E1F81CF373D900C02D30 /* Frameworks */,
 				3B67E1F91CF373D900C02D30 /* Resources */,
+				A6CB70490EFFDC5AA2939F0D /* 📦 Embed Pods Frameworks */,
+				58D6E28E3ED6EBF11482ED8D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +234,7 @@
 				TargetAttributes = {
 					3B67E1FA1CF373D900C02D30 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HJEVPA356N;
 					};
 					3B67E2131CF373D900C02D30 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -264,6 +292,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58D6E28E3ED6EBF11482ED8D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDKTest/Pods-SDKTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6CB70490EFFDC5AA2939F0D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDKTest/Pods-SDKTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C56B07E292CB0AEDAFC40858 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B67E1F71CF373D900C02D30 /* Sources */ = {
@@ -413,23 +489,31 @@
 		};
 		3B67E2291CF373D900C02D30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E351618527A0BBCA2300569 /* Pods-SDKTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SDKTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yieldmo.SDKTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		3B67E22A1CF373D900C02D30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 343FA597BB420F7BA555011E /* Pods-SDKTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SDKTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yieldmo.SDKTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +582,7 @@
 				3B67E22A1CF373D900C02D30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B67E22B1CF373D900C02D30 /* Build configuration list for PBXNativeTarget "SDKTestTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +591,7 @@
 				3B67E22D1CF373D900C02D30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B67E22E1CF373D900C02D30 /* Build configuration list for PBXNativeTarget "SDKTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +600,7 @@
 				3B67E2301CF373D900C02D30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
